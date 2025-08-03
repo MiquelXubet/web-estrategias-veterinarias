@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../Images/logo.png";
 import Nav from "./Nav";
-import "./Main-header.css";
+import "./Main-Header.css";
 
 function Mainheader() {
   const [menuOpen, setMenuOpen] = useState(false);
