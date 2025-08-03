@@ -1,0 +1,188 @@
+/* === Mobile First === */
+.main-header {
+  background-color: #fff;
+  padding: 3px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1100;
+}
+
+.main-header-content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Logo */
+.logo,
+.nav-logo {
+  max-height: 100px;
+  height: auto;
+  width: auto;
+  display: block;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Botón hamburguesa solo en móvil */
+.menu-toggle {
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1600;
+  padding: 0;
+  outline: none;
+  position: relative;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle span,
+.menu-toggle span::before,
+.menu-toggle span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #12269e;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+.menu-toggle span {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.menu-toggle span::before {
+  content: "";
+  top: calc(50% - 10px);
+  left: 0;
+}
+
+.menu-toggle span::after {
+  content: "";
+  top: calc(50% + 10px);
+  left: 0;
+}
+
+.menu-toggle.active span {
+  background-color: transparent;
+}
+
+.menu-toggle.active span::before {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.menu-toggle.active span::after {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+/* Menú hamburguesa móvil */
+.nav-list {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  z-index: 1500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-list.active {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-list a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #12269e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: #f9b347;
+}
+
+/* === Tablets y Desktop (≥600px) === */
+@media (min-width: 600px) {
+  .main-header-content {
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+
+  .logo {
+    max-height: 130px;
+  }
+
+  /* Ocultar hamburguesa en tablet y escritorio */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Mostrar menú horizontal */
+  .nav-list {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    pointer-events: auto;
+    gap: 2.5rem;
+  }
+
+  .nav-list a {
+    font-size: 1.4rem;
+  }
+}
+
+/* === Desktop (≥1024px) === */
+@media (min-width: 1024px) {
+  .main-header-content {
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    max-height: 150px;
+  }
+
+  .nav-list {
+    gap: 3rem;
+  }
+
+  .nav-list a {
+    font-size: 1.8rem;
+  }
+}
