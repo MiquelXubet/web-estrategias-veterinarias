@@ -1,20 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav({ isOpen }) {
   return (
     <nav>
       <ul className={`nav-list ${isOpen ? "active" : ""}`}>
         <li>
-          <a href="/servicios">Servicios</a>
+          <Link to="/servicios">Servicios</Link>
         </li>
         <li>
-          <a href="/planes">Planes</a>
+          <Link to="/planes">Planes</Link>
         </li>
         <li>
-          <a href="/nosotros">Nosotros</a>
+          <Link to="/nosotros">Nosotros</Link>
         </li>
         <li>
-          <a href="/blog">Blog</a>
+          <Link to="/blog">Blog</Link>
         </li>
       </ul>
     </nav>

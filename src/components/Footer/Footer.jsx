@@ -11,7 +11,7 @@ function Footer() {
           <img
             src={logo}
             alt="Estrategias Veterinarias"
-            className="footer-logo"
+            className="footer-logo-img"
           />
         </div>
         <div className="footer-redes">
@@ -37,6 +37,29 @@ function Footer() {
             <FaLinkedin />
           </a>
         </div>
+      </div>
+
+      <p className="footer-frase">
+        Cuidamos de tu clínica para que tú sigas cuidando de quienes más
+        importan.
+      </p>
+
+      <div className="footer-menu">
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#blog">Blog</a>
+      </div>
+
+      <div className="footer-contacto">
+        <a
+          href="https://wa.me/34633979272"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-whatsapp"
+        >
+          Escríbenos por WhatsApp
+        </a>
       </div>
 
       <p className="footer-copy">
