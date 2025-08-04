@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../Images/logo.png";
 import Nav from "./Nav";
 import "./Main-Header.css";
@@ -11,7 +12,9 @@ function Mainheader() {
   return (
     <header className="main-header">
       <div className="main-header-content">
-        <img src={logo} alt="imagen-logo" className="logo" />
+        <Link to="/">
+          <img src={logo} alt="imagen-logo" className="logo" />
+        </Link>
         <button
           className={`menu-toggle ${menuOpen ? "active" : ""}`}
           onClick={toggleMenu}
@@ -27,3 +30,33 @@ function Mainheader() {
 }
 
 export default Mainheader;
+
+// import React, { useState } from "react";
+// import logo from "../../Images/logo.png";
+// import Nav from "./Nav";
+// import "./Main-Header.css";
+
+// function Mainheader() {
+//   const [menuOpen, setMenuOpen] = useState(false);
+
+//   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+//   return (
+//     <header className="main-header">
+//       <div className="main-header-content">
+//         <img src={logo} alt="imagen-logo" className="logo" />
+//         <button
+//           className={`menu-toggle ${menuOpen ? "active" : ""}`}
+//           onClick={toggleMenu}
+//           aria-label="Toggle menu"
+//           aria-expanded={menuOpen}
+//         >
+//           <span></span>
+//         </button>
+//         <Nav isOpen={menuOpen} toggleMenu={toggleMenu} />
+//       </div>
+//     </header>
+//   );
+// }
+
+// export default Mainheader;
