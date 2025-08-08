@@ -1,0 +1,70 @@
+/* Mobile first: estilos base para móviles */
+
+.cookies-policy {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.cookies-policy h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #0033ff;
+  text-align: center;
+}
+
+.cookies-policy h2 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #0056cc;
+}
+
+.cookies-policy p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.cookies-policy ul {
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.cookies-policy li {
+  margin-bottom: 0.5rem;
+}
+
+.cookies-policy a {
+  color: #0033ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cookies-policy a:hover {
+  color: #001f80;
+  text-decoration: underline;
+}
+
+/* Estilos para tablets y pantallas más grandes (≥ 768px) */
+
+@media (min-width: 768px) {
+  .cookies-policy {
+    padding: 2rem;
+  }
+
+  .cookies-policy h1 {
+    font-size: 2.4rem;
+  }
+
+  .cookies-policy h2 {
+    font-size: 1.5rem;
+  }
+
+  .cookies-policy p {
+    font-size: 1.1rem;
+  }
+}

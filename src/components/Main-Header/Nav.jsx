@@ -1,21 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Nav({ isOpen }) {
+function Nav({ isOpen, toggleMenu }) {
+  // Cierra menú al hacer click en un enlace (solo si está abierto)
+  const closeMenu = () => {
+    if (isOpen) toggleMenu();
+  };
+
   return (
     <nav>
       <ul className={`nav-list ${isOpen ? "active" : ""}`}>
         <li>
-          <Link to="/servicios">Servicios</Link>
+          <Link to="/servicios" onClick={closeMenu}>
+            Servicios
+          </Link>
         </li>
         <li>
-          <Link to="/planes">Planes</Link>
+          <Link to="/planes" onClick={closeMenu}>
+            Planes
+          </Link>
         </li>
         <li>
-          <Link to="/nosotros">Nosotros</Link>
+          <Link to="/nosotros" onClick={closeMenu}>
+            Nosotros
+          </Link>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>
+          <Link to="/blog" onClick={closeMenu}>
+            Blog
+          </Link>
         </li>
       </ul>
     </nav>

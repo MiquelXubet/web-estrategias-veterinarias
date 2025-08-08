@@ -1,10 +1,22 @@
 // src/components/BlogCard.jsx
 import React from "react";
-import "./BlogCard.css"; // Opcional si vas a usar estilos personalizados
+import { useNavigate } from "react-router-dom";
+import "./BlogCard.css";
 
-const BlogCard = ({ title, summary, image, date }) => {
+const BlogCard = ({ id, title, summary, image, date }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/blog/${id}`);
+  };
+
   return (
-    <article className="blog-card">
+    <article
+      className="blog-card"
+      onClick={handleClick}
+      role="button"
+      tabIndex={0}
+    >
       <img src={image} alt={title} className="blog-card__image" />
       <div className="blog-card__content">
         <h2 className="blog-card__title">{title}</h2>
