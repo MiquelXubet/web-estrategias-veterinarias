@@ -1,8 +1,7 @@
-// src/components/Pages/PrivacyPolicy.jsx
 import React from "react";
 import "./PrivacyPolicy.css";
 
-const PrivacyPolicy = () => {
+const Privacidad = () => {
   return (
     <section className="privacy-policy">
       <h1>Política de Privacidad</h1>
@@ -76,8 +75,8 @@ const PrivacyPolicy = () => {
 
       <h2>8. Uso de cookies</h2>
       <p>
-        Consulta nuestra <a href="/politica-cookies">Política de Cookies</a>{" "}
-        para más información sobre el uso de cookies en este sitio web.
+        Consulta nuestra Política de Cookies para más información sobre el uso
+        de cookies en este sitio web.
       </p>
 
       <h2>9. Cambios en la política de privacidad</h2>
@@ -99,4 +98,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default Privacidad;

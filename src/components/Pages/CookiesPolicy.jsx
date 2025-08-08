@@ -43,11 +43,7 @@ const CookiesPolicy = () => {
       <h2>Más información</h2>
       <p>
         Para más detalles, visita la página oficial de la Agencia Española de
-        Protección de Datos:{" "}
-        <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">
-          www.aepd.es
-        </a>
-        .
+        Protección de Datos: www.aepd.es
       </p>
     </section>
   );

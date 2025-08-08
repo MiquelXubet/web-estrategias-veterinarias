@@ -49,17 +49,6 @@
   margin-bottom: 0.5rem;
 }
 
-.privacy-policy a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.privacy-policy a:hover,
-.privacy-policy a:focus {
-  text-decoration: underline;
-  outline: none;
-}
-
 /* Responsive para tablets en adelante */
 @media (min-width: 600px) {
   .privacy-policy {

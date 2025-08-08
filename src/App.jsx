@@ -11,7 +11,7 @@ import Planes from "./components/Pages/Planes";
 import PlanDetail from "./components/Pages/PlanDetail";
 import Checkout from "./components/Pages/Checkout";
 import BlogPost from "./components/Pages/BlogPost";
-import PrivacyPolicy from "./components/Pages/PrivacyPolicy";
+import Privacidad from "./components/Pages/PrivacyPolicy";
 import LegalNotice from "./components/Pages/LegalNotice";
 import CookiesPolicy from "./components/Pages/CookiesPolicy";
 
@@ -30,9 +30,9 @@ function App() {
             <Route path="/planes/:id" element={<PlanDetail />} />
             <Route path="/comprar/:id" element={<Checkout />} />
             <Route path="/blog/:id" element={<BlogPost />} />
-            <Route path="/politica-privacidad" element={<PrivacyPolicy />} />
-            <Route path="/aviso-legal" element={<LegalNotice />} />
-            <Route path="/cookies" element={<CookiesPolicy />} />
+            <Route path="/politica-privacidad" element={<Privacidad />} />
+            <Route path="aviso-legal" element={<LegalNotice />} />
+            <Route path="cookies" element={<CookiesPolicy />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -19,12 +19,12 @@ const LegalNotice = () => {
         <strong>Domicilio:</strong> Carrer Can Sajart, 4 - 08293 - Collbató -
         Barcelona
         <br />
-        <strong>Correo electrónico:</strong>{" "}
+        <strong>Correo electrónico:</strong>
         contacto@estrategiasveterinarias.com
         <br />
         <strong>Teléfono:</strong> +34 633979272
         <br />
-        <strong>NIF/CIF:</strong> [36521588H]
+        <strong>NIF/CIF:</strong> 36521588H
       </p>
 
       <h2>2. Condiciones de Uso</h2>
@@ -54,8 +54,7 @@ const LegalNotice = () => {
       <h2>5. Protección de Datos</h2>
       <p>
         Para información detallada sobre la protección de datos personales,
-        consulte nuestra{" "}
-        <a href="/politica-privacidad">Política de Privacidad</a>.
+        consulte nuestra Política de Privacidad.
       </p>
 
       <h2>6. Legislación Aplicable y Jurisdicción</h2>
