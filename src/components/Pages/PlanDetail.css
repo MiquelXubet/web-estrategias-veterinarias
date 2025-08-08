@@ -1,0 +1,116 @@
+/* PlanDetail.css */
+
+/* Reset básico para este componente */
+.plan-detail {
+  max-width: 600px; /* Ancho máximo para lectura cómoda */
+  margin: 20px auto; /* Centrado horizontal con margen arriba y abajo */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+/* Título principal */
+.plan-detail h2 {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #3498db;
+  text-align: center;
+}
+
+/* Precio destacado */
+.plan-detail .price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e67e22;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Descripción detallada */
+.plan-detail p {
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-line; /* Para respetar saltos de línea en texto */
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+
+/* Lista de servicios */
+.plan-detail ul {
+  list-style-type: disc; /* Marcadores de lista */
+  padding-left: 3rem;
+  margin-bottom: 25px;
+}
+
+.plan-detail ul li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* --- Media Queries para tablets y desktop --- */
+
+/* Tablets y pantallas medianas */
+@media (min-width: 600px) {
+  .plan-detail {
+    max-width: 900px;
+    padding: 30px;
+  }
+
+  .plan-detail h1 {
+    font-size: 2.2rem;
+  }
+
+  .plan-detail .price {
+    font-size: 1.6rem;
+  }
+
+  .plan-detail p {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+}
+
+/* Escritorio y pantallas grandes */
+@media (min-width: 900px) {
+  .plan-detail {
+    max-width: 1200px;
+    padding: 40px 60px;
+  }
+
+  .plan-detail h1 {
+    font-size: 2.5rem;
+  }
+
+  .plan-detail .price {
+    font-size: 1.8rem;
+  }
+
+  .plan-detail p {
+    font-size: 1.2rem;
+    padding: 0 30px;
+  }
+
+  .plan-detail ul {
+    padding-left: 30px;
+  }
+
+  .plan-detail ul li {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .boton {
+    margin-top: 30px;
+  }
+}

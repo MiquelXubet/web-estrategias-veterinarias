@@ -7,6 +7,9 @@ import Servicios from "./components/Pages/Servicios";
 import Nosotros from "./components/Pages/Nosotros";
 import Blog from "./components/Pages/Blog";
 import "./App.css";
+import Planes from "./components/Pages/Planes";
+import PlanDetail from "./components/Pages/PlanDetail";
+import Checkout from "./components/Pages/Checkout";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
             <Route path="Servicios" element={<Servicios />} />
             <Route path="Nosotros" element={<Nosotros />} />
             <Route path="Blog" element={<Blog />} />
+            <Route path="Planes" element={<Planes />} />
+            <Route path="/planes/:id" element={<PlanDetail />} />
+            <Route path="/comprar/:id" element={<Checkout />} />
           </Route>
         </Routes>
       </BrowserRouter>

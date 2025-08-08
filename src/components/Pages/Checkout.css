@@ -1,0 +1,91 @@
+/* Mobile first base styles */
+
+.checkout-container {
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.checkout-plan {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.checkout-plan h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkout-plan p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.checkout-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout-buttons button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.buy-button:hover {
+  background-color: #218838;
+}
+
+.back-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+/* Tablet and up (min-width: 600px) */
+
+@media (min-width: 600px) {
+  .checkout-title {
+    font-size: 2rem;
+  }
+
+  .checkout-plan h2 {
+    font-size: 1.5rem;
+  }
+
+  .checkout-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .checkout-buttons button {
+    flex: 1;
+  }
+}

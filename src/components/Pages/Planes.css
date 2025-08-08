@@ -1,0 +1,115 @@
+/* Estilos base (mobile first) */
+.planes-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #fdfdfd;
+}
+
+.planes-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #2d2d2d;
+}
+
+.planes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.plan-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.3s ease, border 0.3s ease, background-color 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-card h2 {
+  color: #2d8a44;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.plan-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.plan-card ul li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.plan-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2d8a44;
+}
+
+.destacado {
+  border: 2px solid #2d8a44;
+  background-color: #f0fff5;
+}
+
+/* Tablets (≥600px): 2 columnas */
+@media (min-width: 600px) {
+  .planes-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .plan-card {
+    flex: 0 1 calc(50% - 1rem);
+  }
+}
+
+/* Escritorio (≥1024px): 3 columnas */
+@media (min-width: 1024px) {
+  .plan-card {
+    flex: 0 1 calc(33.333% - 1rem);
+  }
+
+  .plan-buttons {
+    justify-content: space-evenly;
+  }
+
+  .planes-title {
+    font-size: 3rem;
+  }
+
+  .plan-card h2 {
+    color: #2d8a44;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .plan-card p {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .plan-card ul li {
+    font-size: 1.2rem;
+  }
+}

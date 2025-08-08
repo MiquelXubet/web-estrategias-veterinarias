@@ -1,0 +1,36 @@
+.info-btn,
+.buy-btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.info-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.info-btn:hover {
+  background-color: #c0c0c0;
+}
+
+.buy-btn {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+.buy-btn:hover {
+  background-color: #246d36;
+}
+
+@media (min-width: 768px) {
+  .info-btn,
+  .buy-btn {
+    width: auto;
+  }
+}
