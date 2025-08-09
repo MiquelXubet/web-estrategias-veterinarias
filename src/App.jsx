@@ -14,11 +14,13 @@ import BlogPost from "./components/Pages/BlogPost";
 import Privacidad from "./components/Pages/PrivacyPolicy";
 import LegalNotice from "./components/Pages/LegalNotice";
 import CookiesPolicy from "./components/Pages/CookiesPolicy";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
