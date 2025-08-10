@@ -330,10 +330,10 @@ const serviciosData = [
 
   {
     id: "email-marketing",
-    titulo: email,
+    titulo: "Email Marketing",
     descripcionCorta:
       "Diseñamos campañas personalizadas para mantener a tus clientes informados y fidelizados.",
-    imagen: "/img/email-marketing.jpg",
+    imagen: email,
     contenido: `
       <p>El email marketing sigue siendo una herramienta muy efectiva para comunicar ofertas, novedades y consejos a tus clientes veterinarios.</p>
       <p>Segmentamos audiencias y creamos mensajes personalizados para mejorar la tasa de apertura y conversión.</p>
@@ -383,10 +383,10 @@ const serviciosData = [
 
   {
     id: "automatizaciones-embudos",
-    titulo: automatizaciones,
+    titulo: "Automatizaciones",
     descripcionCorta:
       "Implementamos procesos automáticos para convertir visitantes en clientes y mejorar la gestión.",
-    imagen: "/img/automatizaciones.jpg",
+    imagen: automatizaciones,
     contenido: `
       <p>Los embudos de venta y automatizaciones te permiten nutrir a tus potenciales clientes con mensajes adecuados en cada fase del proceso.</p>
       <p>Esto facilita la conversión y mejora la experiencia del cliente, ahorrándote tiempo y esfuerzo.</p>
