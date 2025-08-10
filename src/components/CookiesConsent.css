@@ -1,0 +1,81 @@
+/* Fondo semitransparente que cubre toda la pantalla */
+.cookies-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Caja modal */
+.cookies-modal {
+  background: #fff;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 90%;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Texto */
+.cookies-text {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Link */
+.cookies-link {
+  color: #4da3ff;
+  text-decoration: underline;
+}
+
+/* Botones */
+.cookies-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.cookies-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cookies-button.accept {
+  background: #4da3ff;
+  color: #fff;
+}
+
+.cookies-button.reject {
+  background: #777;
+  color: #fff;
+}
+
+/* ===== TABLET Y DESKTOP ===== */
+@media (min-width: 600px) {
+  .cookies-modal {
+    width: 400px;
+    padding: 2rem;
+  }
+
+  .cookies-text {
+    font-size: 1rem;
+  }
+
+  .cookies-button {
+    font-size: 1rem;
+  }
+}

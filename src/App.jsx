@@ -15,6 +15,7 @@ import Privacidad from "./components/Pages/PrivacyPolicy";
 import LegalNotice from "./components/Pages/LegalNotice";
 import CookiesPolicy from "./components/Pages/CookiesPolicy";
 import ScrollToTop from "./components/ScrollToTop";
+import CookiesConsent from "./components/CookiesConsent";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="cookies" element={<CookiesPolicy />} />
           </Route>
         </Routes>
+        <CookiesConsent />
       </BrowserRouter>
     </div>
   );
