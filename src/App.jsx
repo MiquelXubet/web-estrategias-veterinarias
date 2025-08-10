@@ -16,6 +16,7 @@ import LegalNotice from "./components/Pages/LegalNotice";
 import CookiesPolicy from "./components/Pages/CookiesPolicy";
 import ScrollToTop from "./components/ScrollToTop";
 import CookiesConsent from "./components/CookiesConsent";
+import ServicioDetalle from "./components/Pages/ServicioDetalle";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="Contacto" element={<Contacto />} />
             <Route path="Servicios" element={<Servicios />} />
+            <Route path="/servicios/:id" element={<ServicioDetalle />} />
             <Route path="Nosotros" element={<Nosotros />} />
             <Route path="Blog" element={<Blog />} />
             <Route path="Planes" element={<Planes />} />

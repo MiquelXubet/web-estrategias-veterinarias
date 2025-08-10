@@ -1,0 +1,88 @@
+/* ServicioDetalle.css */
+
+.servicio-detalle {
+  padding: 1.2rem 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #fafafa;
+  line-height: 1.7;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.servicio-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #003366;
+  text-align: center;
+}
+
+.servicio-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-descripcion-corta {
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #444;
+}
+
+.servicio-seccion {
+  margin-bottom: 2.2rem;
+  padding-left: 0.5rem;
+}
+
+.servicio-seccion h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  border-bottom: 3px solid #007acc;
+  padding-bottom: 0.3rem;
+  font-weight: 600;
+  color: #005a99;
+}
+
+.servicio-seccion ul,
+.servicio-seccion ol {
+  padding-left: 1.4rem;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+.faq-item {
+  margin-bottom: 1.2rem;
+  background: #e9f1fc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.faq-item strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #004a80;
+}
+
+@media (min-width: 600px) {
+  .servicio-detalle {
+    padding: 2rem 3rem;
+    max-width: 900px;
+    font-size: 1.1rem;
+  }
+
+  .servicio-titulo {
+    font-size: 2.8rem;
+  }
+
+  .servicio-seccion h2 {
+    font-size: 1.9rem;
+  }
+}
