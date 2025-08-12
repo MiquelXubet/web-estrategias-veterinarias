@@ -1,10 +1,10 @@
 .servicios {
-  background-color: #f9b347;
+  background-color: #0033ff; /* naranja */
   padding: 5rem;
 }
 
 .servicios h2 {
-  color: #12269e;
+  color: #0033ff; /* azul principal */
   font-size: 2.5rem;
   margin-bottom: 5rem;
   text-align: center;
@@ -12,7 +12,7 @@
 
 .servicios-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 4 columnas */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
   gap: 80px; /* separación entre cajas */
   padding: 0 40px; /* margen interior opcional */
 }
@@ -21,7 +21,7 @@
   text-align: center;
   padding: 20px;
   border-radius: 10px;
-  background-color: #cadfdf;
+  background-color: rgba(0, 86, 204, 0.1); /* azul secundario suave */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
@@ -31,14 +31,14 @@
 }
 
 .servicio-card h3 {
-  color: #12269e;
+  color: #0033ff; /* azul principal */
   font-size: 1.5rem;
   margin-top: 40px;
 }
 
 .servicio-imagen {
   width: 100%;
-  height: 350px; /* o lo que necesites */
+  height: 350px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -46,6 +46,6 @@
 .servicio-imagen img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* rellena y recorta manteniendo proporción */
+  object-fit: cover;
   display: block;
 }

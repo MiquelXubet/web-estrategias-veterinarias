@@ -3,12 +3,13 @@
   padding: 0.6rem 1rem;
   border: none;
   border-radius: 6px;
-  font-size: 0.95rem;
+  font-size: 1rem; /* p móvil */
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
 }
 
+/* Botón informativo en gris suave */
 .info-btn {
   background-color: #e0e0e0;
   color: #333;
@@ -18,19 +19,30 @@
   background-color: #c0c0c0;
 }
 
+/* Botón de compra con color de marca */
 .buy-btn {
-  background-color: #3498db;
+  background-color: #12269e; /* amarillo marca */
   color: white;
   font-weight: bold;
 }
 
 .buy-btn:hover {
-  background-color: #246d36;
+  background-color: #d5604a; /* rojo anaranjado marca */
 }
 
-@media (min-width: 768px) {
+/* Tablet */
+@media (min-width: 600px) {
   .info-btn,
   .buy-btn {
+    font-size: 1.125rem; /* p tablet */
     width: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .info-btn,
+  .buy-btn {
+    font-size: 1.125rem; /* p desktop */
   }
 }

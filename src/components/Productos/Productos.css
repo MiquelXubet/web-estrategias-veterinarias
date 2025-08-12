@@ -1,11 +1,11 @@
 /* === Base: Mobile First === */
 .servicios {
-  background-color: #f9b347;
+  background-color: #f9b347; /* naranja */
   padding: 4rem 1.5rem;
 }
 
 .servicios h2 {
-  color: #12269e;
+  color: #0033ff; /* azul principal */
   font-size: 1.75rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -19,9 +19,10 @@
 
 .servicio-card {
   text-align: center;
+  text-decoration: none;
   padding: 1.5rem;
   border-radius: 10px;
-  background-color: #cadfdf;
+  background-color: #def7f7;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
@@ -31,14 +32,14 @@
 }
 
 .servicio-card h3 {
-  color: #12269e;
+  color: #0033ff; /* azul principal */
   font-size: 1.4rem;
   margin-top: 1.5rem;
 }
 
 .servicio-imagen {
   width: 100%;
-  height: 250px;
+  height: 210px;
   overflow: hidden;
   border-radius: 10px;
 }

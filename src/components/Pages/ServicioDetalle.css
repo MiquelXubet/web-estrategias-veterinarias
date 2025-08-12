@@ -1,11 +1,9 @@
-/* ServicioDetalle.css */
-
 .servicio-detalle {
-  padding: 1.2rem 1rem;
+  padding: 0 1rem;
   max-width: 700px;
   margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
+  color: #333; /* Color base más neutro para mejor legibilidad */
   background-color: #fafafa;
   line-height: 1.7;
   font-size: 1rem;
@@ -15,8 +13,8 @@
 .servicio-titulo {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.8rem;
-  color: #003366;
+  margin-bottom: 1rem;
+  color: #0033ff; /* Azul brillante usado en otros títulos */
   text-align: center;
 }
 
@@ -30,7 +28,7 @@
 
 .servicio-descripcion-corta {
   font-style: italic;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   font-size: 1.1rem;
   text-align: center;
   color: #444;
@@ -44,10 +42,10 @@
 .servicio-seccion h2 {
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
-  border-bottom: 3px solid #007acc;
+  border-bottom: 3px solid #0056cc; /* Azul intermedio */
   padding-bottom: 0.3rem;
   font-weight: 600;
-  color: #005a99;
+  color: #0056cc;
 }
 
 .servicio-seccion ul,
@@ -59,7 +57,7 @@
 
 .faq-item {
   margin-bottom: 1.2rem;
-  background: #e9f1fc;
+  background: #f0fdfb; /* color suave claro (coherente con hero-nosotros) */
   padding: 1rem;
   border-radius: 8px;
 }
@@ -68,7 +66,7 @@
   display: block;
   margin-bottom: 0.4rem;
   font-weight: 600;
-  color: #004a80;
+  color: #001f80; /* Azul oscuro para el texto destacado */
 }
 
 @media (min-width: 600px) {

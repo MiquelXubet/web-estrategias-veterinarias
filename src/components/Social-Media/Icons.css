@@ -1,23 +1,25 @@
-/* Base: móvil (mobile first) */
-
 .icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* más pequeño en móvil para no ocupar tanto espacio */
+  gap: 10px;
   flex-wrap: wrap;
+  color: #12269e; /* color principal */
+  font-size: 1.2rem; /* tamaño base móvil */
 }
 
 /* Tablets (≥600px) */
 @media (min-width: 600px) {
   .icons {
-    gap: 25px; /* más separación en pantallas medianas */
+    gap: 25px;
+    font-size: 1.5rem; /* más grande en tablet */
   }
 }
 
 /* Desktop (≥1024px) */
 @media (min-width: 1024px) {
   .icons {
-    gap: 30px; /* espacio más amplio en escritorio */
+    gap: 30px;
+    font-size: 1.8rem; /* aún más grande en escritorio */
   }
 }

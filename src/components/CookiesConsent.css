@@ -14,8 +14,8 @@
 
 /* Caja modal */
 .cookies-modal {
-  background: #fff;
-  color: #333;
+  background: #fafafa; /* gris claro suave para fondo */
+  color: #444444; /* gris texto */
   padding: 1.5rem;
   border-radius: 10px;
   max-width: 90%;
@@ -26,15 +26,15 @@
 
 /* Texto */
 .cookies-text {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-  line-height: 1.8;
+  font-size: 1rem; /* base móvil */
   margin-bottom: 2rem;
+  line-height: 1.8;
+  color: #444444;
 }
 
 /* Link */
 .cookies-link {
-  color: #4da3ff;
+  color: #12269e; /* azul principal */
   text-decoration: underline;
 }
 
@@ -47,20 +47,30 @@
 
 .cookies-button {
   padding: 0.5rem 1rem;
-  font-size: 0.85rem;
+  font-size: 1rem; /* base móvil */
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .cookies-button.accept {
-  background: #4da3ff;
-  color: #fff;
+  background: #f9b347; /* amarillo */
+  color: #003366; /* azul oscuro */
+}
+
+.cookies-button.accept:hover {
+  background: #e0a533; /* amarillo más oscuro para hover */
 }
 
 .cookies-button.reject {
-  background: #777;
+  background: #777777; /* gris oscuro */
   color: #fff;
+}
+
+.cookies-button.reject:hover {
+  background: #555555; /* gris más oscuro para hover */
 }
 
 /* ===== TABLET Y DESKTOP ===== */

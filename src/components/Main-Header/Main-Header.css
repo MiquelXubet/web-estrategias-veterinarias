@@ -52,7 +52,7 @@
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: #12269e;
+  background-color: #12269e; /* azul principal */
   border-radius: 3px;
   transition: all 0.4s ease;
 }
@@ -118,16 +118,16 @@
 }
 
 .nav-list a {
-  font-size: 2rem;
+  font-size: 1.75rem; /* escala móvil */
   font-weight: 700;
-  color: #12269e;
+  color: #12269e; /* azul principal */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-list a:hover,
 .nav-list a:focus {
-  color: #f9b347;
+  color: #f9b347; /* amarillo */
 }
 
 /* === Tablets y Desktop (≥600px) === */
@@ -162,7 +162,7 @@
   }
 
   .nav-list a {
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* escala tablet */
   }
 }
 
@@ -184,6 +184,6 @@
   }
 
   .nav-list a {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* escala desktop */
   }
 }
