@@ -1,4 +1,4 @@
-/* === Base: Mobile First === */
+/* Base Mobile First */
 .planes-section {
   padding: 2rem 1rem;
   text-align: center;
@@ -25,9 +25,9 @@
   cursor: pointer;
   transition: transform 0.3s ease, border 0.3s ease, background-color 0.3s ease;
 
-  display: flex; /* Flex vertical para distribuir contenido */
+  display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Empuja botones abajo */
+  justify-content: space-between;
 }
 
 .plan-card:hover {
@@ -35,7 +35,7 @@
 }
 
 .plan-card h2 {
-  color: #12269e; /* azul principal */
+  color: #12269e;
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
 }
@@ -62,7 +62,7 @@
   flex-direction: row;
   gap: 2rem;
   justify-content: center;
-  margin-top: auto; /* Empuja los botones al final de la tarjeta */
+  margin-top: auto;
 }
 
 .price {
@@ -76,13 +76,13 @@
   background-color: #f0fff5;
 }
 
-/* === Tablets (≥600px) === */
+/* Tablets (≥600px) */
 @media (min-width: 600px) {
   .planes-container {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch; /* Para que las tarjetas tengan igual altura */
+    align-items: stretch;
     width: 75%;
     margin: 0 auto;
   }
@@ -92,13 +92,13 @@
   }
 }
 
-/* === Desktop (≥1024px) === */
+/* Desktop (≥1024px) */
 @media (min-width: 1024px) {
   .planes-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch; /* Para que las tarjetas tengan igual altura */
+    align-items: stretch;
   }
 
   .plan-card {

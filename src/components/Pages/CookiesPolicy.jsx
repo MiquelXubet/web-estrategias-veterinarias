@@ -1,4 +1,3 @@
-// src/components/Pages/CookiesPolicy.jsx
 import React from "react";
 import "./CookiesPolicy.css";
 

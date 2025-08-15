@@ -1,4 +1,4 @@
-/* Base: móvil (mobile first) */
+/* Base Mobile First */
 * {
   box-sizing: border-box;
 }
@@ -8,7 +8,7 @@
   text-align: center;
   margin: 4rem auto;
   font-size: 1.75rem;
-  color: #12269e; /* color principal */
+  color: #12269e;
 }
 
 .testimonios-grid {
@@ -22,7 +22,7 @@
 }
 
 .card-testimonio {
-  background-color: #fafafa; /* fondo gris claro suave */
+  background-color: #fafafa;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -47,7 +47,7 @@
   font-size: 1rem;
   line-height: 1.4;
   text-align: center;
-  color: #444444; /* gris texto principal */
+  color: #444444;
 }
 
 .texto-testimonio p {
@@ -69,12 +69,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #def7f7; /* color amarillo */
+  background-color: #def7f7;
   padding: 8px 12px;
   border-radius: 10px;
   font-style: italic;
   font-weight: bold;
-  color: #003366; /* azul oscuro */
+  color: #003366;
   width: 100%;
   justify-content: center;
 }

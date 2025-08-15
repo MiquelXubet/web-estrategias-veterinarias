@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import heroImage from "../../Images/banner.png"; // Usa tu imagen aquí
+import heroImage from "../../Images/banner.png";
 import { Link } from "react-router-dom";
 
 function Hero() {
@@ -15,10 +15,6 @@ function Hero() {
         <Link to="/contacto">
           <button className="hero-btn">Solicita una demo</button>
         </Link>
-        {/* <p>
-          Aumenta tu visibilidad, atrae más clientes y mejora la comunicación
-          con tus pacientes.
-        </p> */}
       </div>
     </section>
   );

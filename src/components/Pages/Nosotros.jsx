@@ -1,5 +1,3 @@
-// src/Components/Pages/Nosotros.jsx
-
 import React from "react";
 import "./Nosotros.css";
 

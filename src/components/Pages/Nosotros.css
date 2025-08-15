@@ -1,5 +1,4 @@
-/* === Base: Mobile First === */
-
+/* Base Mobile First */
 .nosotros-container {
   width: 100%;
   max-width: 90%;
@@ -56,7 +55,7 @@
   color: #444;
 }
 
-/* === Tablets (≥600px) === */
+/* Tablets (≥600px) */
 
 @media (min-width: 600px) {
   .hero-nosotros h1 {
@@ -80,7 +79,7 @@
   }
 }
 
-/* === Desktop (≥1024px) === */
+/* Desktop (≥1024px) */
 
 @media (min-width: 1024px) {
   .nosotros-container {

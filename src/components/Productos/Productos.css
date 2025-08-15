@@ -1,11 +1,11 @@
-/* === Base: Mobile First === */
+/* Base: Mobile First */
 .servicios {
-  background-color: #f9b347; /* naranja */
+  background-color: #f9b347;
   padding: 4rem 1.5rem;
 }
 
 .servicios h2 {
-  color: #0033ff; /* azul principal */
+  color: #0033ff;
   font-size: 1.75rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -32,14 +32,13 @@
 }
 
 .servicio-card h3 {
-  color: #0033ff; /* azul principal */
+  color: #0033ff;
   font-size: 1.4rem;
   margin-top: 1.5rem;
 }
 
 .servicio-imagen {
   width: 100%;
-  /* height: 210px; */
   overflow: hidden;
   border-radius: 10px;
 }
@@ -51,7 +50,7 @@
   display: block;
 }
 
-/* === Tablets (≥600px) === */
+/* Tablets (≥600px) */
 @media (min-width: 600px) {
   .servicios h2 {
     font-size: 2.2rem;
@@ -73,7 +72,7 @@
   }
 }
 
-/* === Desktop (≥1024px) === */
+/* Desktop (≥1024px) */
 @media (min-width: 1024px) {
   .servicios {
     padding: 5rem 4rem;

@@ -1,3 +1,4 @@
+/* Base Mobile First */
 .checkout-section {
   padding: 2rem;
   max-width: 800px;
@@ -7,12 +8,12 @@
 .checkout-title {
   text-align: center;
   font-size: 2rem;
-  color: #12269e; /* azul principal */
+  color: #12269e;
   margin-bottom: 2rem;
 }
 
 .checkout-summary {
-  background: rgba(77, 163, 255, 0.1); /* azul claro suave */
+  background: rgba(77, 163, 255, 0.1);
   border: 1px solid #4da3ff;
   padding: 1.5rem;
   border-radius: 10px;
@@ -61,7 +62,7 @@
 }
 
 .checkout-btn {
-  background-color: #ff7c3f; /* naranja principal */
+  background-color: #ff7c3f;
   color: white;
   padding: 1rem;
   font-size: 1.1rem;
@@ -73,7 +74,7 @@
 }
 
 .checkout-btn:hover {
-  background-color: #ff4d00; /* naranja oscuro */
+  background-color: #ff4d00;
 }
 
 @media (max-width: 600px) {

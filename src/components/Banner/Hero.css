@@ -16,13 +16,13 @@
 }
 
 .hero-content h1 {
-  font-size: 2rem; /* h1 móvil */
+  font-size: 2rem;
   color: #12269e;
   margin-bottom: 2rem;
 }
 
 .hero-content p {
-  font-size: 1rem; /* p móvil */
+  font-size: 1rem;
   color: #333;
   margin-bottom: 3rem;
   min-width: 300px;
@@ -60,14 +60,14 @@
   height: auto;
 }
 
-/* === Tablet (≥600px) === */
+/* Tablet (≥600px) */
 @media (min-width: 600px) {
   .hero-content h1 {
-    font-size: 2.5rem; /* h1 tablet */
+    font-size: 2.5rem;
   }
 
   .hero-content p {
-    font-size: 1.125rem; /* p tablet */
+    font-size: 1.125rem;
   }
 
   .hero-btn {
@@ -90,11 +90,11 @@
   }
 
   .hero-content h1 {
-    font-size: 3rem; /* h1 desktop */
+    font-size: 3rem;
   }
 
   .hero-content p {
-    font-size: 1.125rem; /* p desktop */
+    font-size: 1.125rem;
   }
 
   .hero-btn {

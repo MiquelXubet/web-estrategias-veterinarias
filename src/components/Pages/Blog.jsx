@@ -1,4 +1,3 @@
-// src/pages/Blog.jsx
 import React from "react";
 import blogPosts from "../../data/blogData";
 import BlogCard from "../Blog/BlogCard";

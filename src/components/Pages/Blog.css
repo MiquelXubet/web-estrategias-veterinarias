@@ -1,9 +1,9 @@
-/* Contenedor del blog que tiene las tarjetas */
+/* Base Mobile First */
 h1 {
   text-align: center;
   margin: 4rem 0;
-  font-size: 2.3rem; /* base móvil */
-  color: #12269e; /* azul principal */
+  font-size: 2.3rem;
+  color: #12269e;
 }
 
 .blog-list {
@@ -16,13 +16,13 @@ h1 {
 
 /* Estilos comunes de blog-card para todos los tamaños */
 .blog-card {
-  background-color: #fafafa; /* gris muy claro */
+  background-color: #fafafa;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 100%; /* Ocupa todo el ancho de la columna */
+  width: 100%;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  margin: 0 auto; /* Ya centramos con grid */
+  margin: 0 auto;
 }
 
 .blog-card:hover {
@@ -35,7 +35,7 @@ h1 {
   height: 400px;
   display: block;
   object-fit: cover;
-  border-bottom: 3px solid #f9b347; /* amarillo para destacar */
+  border-bottom: 3px solid #f9b347;
 }
 
 .blog-card__content {
@@ -43,14 +43,14 @@ h1 {
 }
 
 .blog-card__title {
-  font-size: 1.4rem; /* base móvil */
+  font-size: 1.4rem;
   font-weight: 700;
   margin: 0 0 0.5rem 0;
-  color: #222; /* verde oscuro */
+  color: #222;
 }
 
 .blog-card__summary {
-  font-size: 1.05rem; /* base móvil */
+  font-size: 1.05rem;
   line-height: 1.4;
   margin-bottom: 1rem;
   color: #444444;

@@ -1,7 +1,6 @@
-// src/components/PlanDetail.jsx
 import React from "react";
 import { useParams } from "react-router-dom";
-import planesData from "../../data/planesData"; // Asegúrate de tener este archivo
+import planesData from "../../data/planesData";
 import "./PlanDetail.css";
 import BuyButton from "../Buttons/BuyButton";
 

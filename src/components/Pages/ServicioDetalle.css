@@ -1,9 +1,10 @@
+/* Base Mobile First */
 .servicio-detalle {
   padding: 0 1rem;
   max-width: 700px;
   margin: 0 auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #333; /* Color base más neutro para mejor legibilidad */
+  color: #333;
   background-color: #fafafa;
   line-height: 1.7;
   font-size: 1rem;
@@ -14,7 +15,7 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #0033ff; /* Azul brillante usado en otros títulos */
+  color: #0033ff;
   text-align: center;
 }
 
@@ -42,7 +43,7 @@
 .servicio-seccion h2 {
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
-  border-bottom: 3px solid #0056cc; /* Azul intermedio */
+  border-bottom: 3px solid #0056cc;
   padding-bottom: 0.3rem;
   font-weight: 600;
   color: #0056cc;
@@ -57,7 +58,7 @@
 
 .faq-item {
   margin-bottom: 1.2rem;
-  background: #f0fdfb; /* color suave claro (coherente con hero-nosotros) */
+  background: #f0fdfb;
   padding: 1rem;
   border-radius: 8px;
 }
@@ -66,7 +67,7 @@
   display: block;
   margin-bottom: 0.4rem;
   font-weight: 600;
-  color: #001f80; /* Azul oscuro para el texto destacado */
+  color: #001f80;
 }
 
 @media (min-width: 600px) {

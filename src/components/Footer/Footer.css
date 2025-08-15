@@ -1,3 +1,4 @@
+/* Base: Mobile First */
 .footer {
   background-color: #cee1e2;
   padding: 2rem 1rem;
@@ -17,7 +18,7 @@
 }
 
 .footer-redes a {
-  color: #12269e; /* azul marca */
+  color: #12269e;
   font-size: 1.5rem;
   margin: 0 0.5rem;
   transition: transform 0.2s ease;
@@ -31,10 +32,12 @@
   margin-top: 1rem;
   font-style: italic;
   color: #333;
-  font-size: 1rem; /* p móvil */
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-.footer-menu {
+.footer-menu,
+.footer-nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -42,15 +45,22 @@
   margin: 1.5rem 0;
 }
 
-.footer-menu a {
-  color: #12269e; /* azul marca */
+.footer-menu a,
+.footer-nav a {
+  color: #12269e;
   text-decoration: none;
-  font-size: 1rem; /* p móvil */
+  font-size: 1rem;
   transition: color 0.2s ease;
 }
 
-.footer-menu a:hover {
-  color: #0d1b6d; /* tono más oscuro */
+.footer-nav a {
+  font-size: 0.9rem;
+  color: #0d1b6d;
+}
+
+.footer-menu a:hover,
+.footer-nav a:hover {
+  color: #0d1b6d;
 }
 
 .btn-whatsapp {
@@ -61,7 +71,7 @@
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  font-size: 1rem; /* p móvil */
+  font-size: 1rem;
   transition: background 0.2s ease;
 }
 
@@ -80,7 +90,7 @@
   .footer-frase,
   .footer-menu a,
   .btn-whatsapp {
-    font-size: 1.125rem; /* p tablet */
+    font-size: 1.125rem;
   }
 
   .footer-copy {
@@ -93,7 +103,7 @@
   .footer-frase,
   .footer-menu a,
   .btn-whatsapp {
-    font-size: 1.125rem; /* p desktop */
+    font-size: 1.125rem;
   }
 
   .footer-copy {

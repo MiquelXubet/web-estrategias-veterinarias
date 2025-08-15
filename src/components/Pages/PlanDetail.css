@@ -1,7 +1,6 @@
-/* === Base: Mobile First === */
-
+/* Base Mobile First*/
 .plan-detail {
-  max-width: 600px; /* Lectura cómoda en móvil */
+  max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
@@ -53,7 +52,7 @@
   margin-top: 20px;
 }
 
-/* === Tablets (≥600px) === */
+/* Tablets (≥600px) */
 
 @media (min-width: 600px) {
   .plan-detail {
@@ -75,7 +74,7 @@
   }
 }
 
-/* === Desktop (≥900px) === */
+/* Desktop (≥900px) */
 
 @media (min-width: 900px) {
   .plan-detail {

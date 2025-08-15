@@ -1,4 +1,4 @@
-/* === Base: Mobile First === */
+/* Base: Mobile First */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,33 +8,33 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: Arial, sans-serif; /* Añadí una fuente base */
+  font-family: Arial, sans-serif;
 }
 
 .formulario-contacto-container {
   padding: 2rem 1rem 4rem;
-  background-color: #f7f7f5; /* fondo suave */
+  background-color: #f7f7f5;
 }
 
 .titulo-contacto {
   text-align: center;
   margin: 2rem 0;
-  font-size: 1.75rem; /* escala móvil */
-  color: #12269e; /* azul principal */
+  font-size: 1.75rem;
+  color: #12269e;
   font-weight: 700;
 }
 
 .descripcion-contacto {
   text-align: center;
-  font-size: 1rem; /* escala móvil */
-  color: #666666; /* gris oscuro */
+  font-size: 1rem;
+  color: #666666;
   margin: 1rem auto 2rem;
   max-width: 90%;
   line-height: 1.6;
 }
 
 .contenido-contacto {
-  background-color: #cadfdf; /* azul muy claro */
+  background-color: #cadfdf;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +42,7 @@ body {
   margin: 3rem auto;
   border-radius: 15px;
   gap: 2rem;
-  padding: 1.5rem; /* para que no quede tan pegado */
+  padding: 1.5rem;
 }
 
 .informacion-contacto-container {
@@ -61,14 +61,14 @@ body {
   align-items: center;
   gap: 1rem;
   font-size: 1.2rem;
-  color: #161f1f; /* texto oscuro */
+  color: #161f1f;
 }
 
 .info-telefono h3,
 .info-email h3 {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #12269e; /* azul principal */
+  color: #12269e;
 }
 
 .info-telefono p,
@@ -82,7 +82,7 @@ body {
   max-width: 600px;
   margin: 5rem auto;
   padding: 30px;
-  background-color: #f9f9f9; /* fondo claro */
+  background-color: #f9f9f9;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -99,7 +99,7 @@ body {
 label {
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #444444; /* gris medio */
+  color: #444444;
 }
 
 input,
@@ -119,7 +119,7 @@ textarea {
 .boton-enviar {
   padding: 10px 20px;
   font-size: 1.1rem;
-  background-color: #f9b347; /* amarillo principal */
+  background-color: #f9b347;
   color: white;
   border: none;
   border-radius: 8px;
@@ -134,7 +134,7 @@ textarea {
 }
 
 .boton-enviar:hover:not(:disabled) {
-  background-color: #d5604a; /* naranja quemado, contraste con amarillo */
+  background-color: #d5604a;
 }
 
 .mensaje-enviado {
@@ -147,10 +147,10 @@ textarea {
   font-weight: 700;
 }
 
-/* === Tablets (≥600px) === */
+/* Tablets (≥600px) */
 @media (min-width: 600px) {
   .titulo-contacto {
-    font-size: 2.2rem; /* escala tablet */
+    font-size: 2.2rem;
   }
 
   .descripcion-contacto {
@@ -168,7 +168,7 @@ textarea {
   }
 }
 
-/* === Desktop (≥1024px) === */
+/* Desktop (≥1024px) */
 @media (min-width: 1024px) {
   .contenido-contacto {
     flex-direction: row;
@@ -179,8 +179,8 @@ textarea {
 
   .titulo-contacto {
     margin: 8rem 0;
-    font-size: 3rem; /* escala desktop */
-    color: #12269e; /* azul principal */
+    font-size: 3rem;
+    color: #12269e;
   }
 
   .informacion-contacto-container {
@@ -196,7 +196,7 @@ textarea {
   .informacion-contacto-container h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #12269e; /* azul principal */
+    color: #12269e;
   }
 
   .informacion-contacto-container p {

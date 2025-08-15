@@ -1,10 +1,10 @@
-/* ==== Estilos base: Mobile First ==== */
+/* Estilos base: Mobile First */
 .blog-post {
   padding: 1rem;
   max-width: 100%;
   margin: 0 auto;
-  background-color: #fafafa; /* gris muy claro */
-  color: #333333; /* texto oscuro */
+  background-color: #fafafa;
+  color: #333333;
 }
 
 .blog-post-title {
@@ -17,7 +17,7 @@
 
 .blog-post-date {
   font-size: 0.9rem;
-  color: #777777; /* gris medio */
+  color: #777777;
   margin-bottom: 1rem;
   font-style: italic;
 }
@@ -39,7 +39,7 @@
   color: #444444;
 }
 
-/* ==== Tablet ==== */
+/* Tablet */
 @media (min-width: 600px) {
   .blog-post {
     padding: 1.5rem;
@@ -55,7 +55,7 @@
   }
 }
 
-/* ==== Desktop ==== */
+/* Desktop */
 @media (min-width: 1024px) {
   .blog-post {
     padding: 2rem;

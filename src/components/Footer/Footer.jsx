@@ -47,8 +47,8 @@ function Footer() {
         </div>
 
         <p className="footer-frase">
-          Cuidamos de tu clínica para que tú sigas cuidando de quienes más
-          importan.
+          "Cuidamos de tu clínica para que tú sigas cuidando de quienes más
+          importan."
         </p>
       </div>
 
@@ -56,10 +56,12 @@ function Footer() {
         <Link to="/servicios">Servicios</Link>
         <Link to="/nosotros">Nosotros</Link>
         <Link to="/planes">Planes</Link>
-        <Link to="/contacto">Contacto</Link>
         <Link to="/blog">Blog</Link>
-        <Link to="/politica-privacidad">Política de Privacidad</Link>
+        <Link to="/contacto">Contacto</Link>
+      </nav>
+      <nav className="footer-nav" aria-label="Enlaces legales">
         <Link to="/aviso-legal">Aviso Legal</Link>
+        <Link to="/politica-privacidad">P. Privacidad</Link>
         <Link to="/cookies">Política de Cookies</Link>
       </nav>
 

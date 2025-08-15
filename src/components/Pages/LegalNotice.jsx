@@ -1,4 +1,3 @@
-// src/components/Pages/LegalNotice.jsx
 import React from "react";
 import "./LegalNotice.css";
 

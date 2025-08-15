@@ -1,3 +1,4 @@
+/* Base Mobile First */
 .privacy-policy {
   padding: 1rem 1.5rem;
   max-width: 800px;
@@ -47,7 +48,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* === Tablets (≥600px) === */
+/* Tablets (≥600px) */
 @media (min-width: 600px) {
   .privacy-policy {
     padding: 2rem 3rem;
@@ -71,7 +72,7 @@
   }
 }
 
-/* === Escritorio amplio (≥1024px) === */
+/* Escritorio (≥1024px) */
 @media (min-width: 1024px) {
   .privacy-policy {
     max-width: 900px;

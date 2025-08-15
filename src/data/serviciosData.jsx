@@ -1,4 +1,3 @@
-// src/data/serviciosData.js
 import marketing from "../Images/mk-digital-vets.png";
 import email from "../Images/email-mk2.png";
 import automatizaciones from "../Images/automatizacion.png";

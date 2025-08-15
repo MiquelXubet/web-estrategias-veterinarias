@@ -1,4 +1,3 @@
-// src/components/Pages/BlogPost.jsx
 import React from "react";
 import { useParams } from "react-router-dom";
 import blogPosts from "../../data/blogData";

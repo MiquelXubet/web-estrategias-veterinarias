@@ -1,3 +1,4 @@
+/* Base Mobile First */
 .blog-card {
   background-color: white;
   border-radius: 8px;
@@ -25,14 +26,14 @@
 }
 
 .blog-card__title {
-  font-size: 1.25rem; /* h3 móvil */
+  font-size: 1.25rem;
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   color: #2a7a2a;
 }
 
 .blog-card__summary {
-  font-size: 1rem; /* p móvil */
+  font-size: 1rem;
   line-height: 1.4;
   margin-bottom: 1rem;
   color: #333;
@@ -70,11 +71,11 @@
   }
 
   .blog-card__title {
-    font-size: 1.5rem; /* h3 tablet */
+    font-size: 1.5rem;
   }
 
   .blog-card__summary {
-    font-size: 1.125rem; /* p tablet */
+    font-size: 1.125rem;
   }
 }
 
@@ -85,10 +86,10 @@
   }
 
   .blog-card__title {
-    font-size: 1.75rem; /* h3 desktop */
+    font-size: 1.75rem;
   }
 
   .blog-card__summary {
-    font-size: 1.125rem; /* p desktop */
+    font-size: 1.125rem;
   }
 }

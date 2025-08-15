@@ -11,7 +11,7 @@
 .como-ayudamos h2 {
   text-align: center;
   margin: 2.5rem;
-  font-size: 1.5rem; /* h2 móvil */
+  font-size: 1.5rem;
   color: #12269e;
 }
 
@@ -30,13 +30,13 @@
 .icono {
   flex-shrink: 0;
   font-size: 3rem;
-  color: #f9b347; /* color marca */
+  color: #f9b347;
   display: none;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #fff4e0; /* tono suave */
+  background-color: #fff4e0;
   border-radius: 50%;
 }
 
@@ -47,14 +47,14 @@
 }
 
 .titulo {
-  font-size: 1.25rem; /* h3 móvil */
+  font-size: 1.25rem;
   margin: 0;
   color: #12269e;
 }
 
 .descripcion,
 .extra {
-  font-size: 1rem; /* p móvil */
+  font-size: 1rem;
   color: #333;
   margin: 0;
 }
@@ -64,7 +64,7 @@
   color: #666;
 }
 
-/* 🖥️ Tablet */
+/* Tablet */
 @media (min-width: 600px) {
   .como-ayudamos {
     overflow-x: hidden;
@@ -72,7 +72,7 @@
 
   .como-ayudamos h2 {
     margin: 4rem 0;
-    font-size: 2rem; /* h2 tablet */
+    font-size: 2rem;
   }
 
   .punto-fuerte {
@@ -92,13 +92,13 @@
   }
 
   .titulo {
-    font-size: 1.5rem; /* h3 tablet */
+    font-size: 1.5rem;
   }
 
   .descripcion,
   .extra {
     margin-top: 1rem;
-    font-size: 1.125rem; /* p tablet */
+    font-size: 1.125rem;
     line-height: 1.6;
   }
 
@@ -107,11 +107,11 @@
   }
 }
 
-/* 🖥️ Desktop */
+/* Desktop */
 @media (min-width: 1200px) {
   .como-ayudamos h2 {
     margin: 8rem 0;
-    font-size: 2.25rem; /* h2 desktop */
+    font-size: 2.25rem;
   }
 
   .punto-fuerte {
@@ -123,12 +123,12 @@
   }
 
   .titulo {
-    font-size: 1.75rem; /* h3 desktop */
+    font-size: 1.75rem;
   }
 
   .descripcion,
   .extra {
-    font-size: 1.125rem; /* p desktop */
+    font-size: 1.125rem;
     line-height: 1.6;
   }
 
