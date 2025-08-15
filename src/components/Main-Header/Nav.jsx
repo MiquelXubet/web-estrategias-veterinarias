@@ -30,6 +30,11 @@ function Nav({ isOpen, toggleMenu }) {
             Blog
           </Link>
         </li>
+        <li>
+          <Link to="contacto" onClick={closeMenu}>
+            Contacto
+          </Link>
+        </li>
       </ul>
     </nav>
   );
