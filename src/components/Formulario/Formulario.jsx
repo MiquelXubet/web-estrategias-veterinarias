@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Formulario.css";
 
-// Componente Formulario
 function Formulario() {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
@@ -11,7 +10,6 @@ function Formulario() {
   const [enviado, setEnviado] = useState(false);
   const [errores, setErrores] = useState({});
 
-  // Función para validar campos
   const validarCampos = () => {
     const nuevosErrores = {};
 
@@ -48,16 +46,14 @@ function Formulario() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (!validarCampos()) {
-      return; // No se envía si hay errores
-    }
+    if (!validarCampos()) return;
 
     emailjs
       .sendForm(
-        "service_isz2jvd",
-        "template_ab816tj",
+        import.meta.env.VITE_EMAILJS_CONTACT_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
         event.target,
-        "6Lg-f7Z8vNBqT6PyP"
+        import.meta.env.VITE_EMAILJS_CONTACT_PUBLIC_KEY
       )
       .then(() => {
         setEnviado(true);
@@ -79,14 +75,20 @@ function Formulario() {
       <div className="contenido-contacto">
         <div className="informacion-contacto-container">
           <div className="info-telefono">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/18179b6ac038d84423d4ee4c96386281587fa212096dec52fd422ee065082649?apiKey=597363a3080546f9b072bf59bebbfd17&" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/18179b6ac038d84423d4ee4c96386281587fa212096dec52fd422ee065082649?apiKey=597363a3080546f9b072bf59bebbfd17&"
+              alt="Teléfono"
+            />
             <div>
               <h3>Llámanos</h3>
               <p>+34 123 456 789</p>
             </div>
           </div>
           <div className="info-email">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9791065adc6c16870ff4a2dc0b81db91ca10e8583d26b74df0f342958a2a420?apiKey=597363a3080546f9b072bf59bebbfd17&" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9791065adc6c16870ff4a2dc0b81db91ca10e8583d26b74df0f342958a2a420?apiKey=597363a3080546f9b072bf59bebbfd17&"
+              alt="Email"
+            />
             <div>
               <h3>Escríbenos</h3>
               <p>contacto@estrategiasveterinarias.com</p>

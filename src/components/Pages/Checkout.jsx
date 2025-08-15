@@ -50,10 +50,10 @@ const Checkout = () => {
 
     emailjs
       .send(
-        "service_isz2jvd", // Service ID
-        "template_786yprp", // Template ID
-        templateParams, // Datos a enviar
-        "6Lg-f7Z8vNBqT6PyP" // Public Key
+        import.meta.env.VITE_EMAILJS_CHECKOUT_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_CHECKOUT_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_CHECKOUT_PUBLIC_KEY
       )
       .then(() => {
         alert("Compra realizada con éxito");
