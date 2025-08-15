@@ -79,10 +79,12 @@
 /* === Tablets (≥600px) === */
 @media (min-width: 600px) {
   .planes-container {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch; /* Para que las tarjetas tengan igual altura */
+    width: 75%;
+    margin: 0 auto;
   }
 
   .plan-card {
@@ -92,6 +94,13 @@
 
 /* === Desktop (≥1024px) === */
 @media (min-width: 1024px) {
+  .planes-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Para que las tarjetas tengan igual altura */
+  }
+
   .plan-card {
     flex: 0 1 calc(33.333% - 1rem);
   }

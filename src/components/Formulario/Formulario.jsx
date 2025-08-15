@@ -3,24 +3,61 @@ import emailjs from "@emailjs/browser";
 import "./Formulario.css";
 
 // Componente Formulario
-
 function Formulario() {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [asunto, setAsunto] = useState("");
   const [mensaje, setMensaje] = useState("");
   const [enviado, setEnviado] = useState(false);
+  const [errores, setErrores] = useState({});
+
+  // Función para validar campos
+  const validarCampos = () => {
+    const nuevosErrores = {};
+
+    if (!nombre.trim()) {
+      nuevosErrores.nombre = "El nombre es obligatorio";
+    } else if (!/^[a-zA-ZÀ-ÿ\s]{2,}$/.test(nombre)) {
+      nuevosErrores.nombre =
+        "El nombre debe tener al menos 2 letras y solo contener letras y espacios";
+    }
+
+    if (!email.trim()) {
+      nuevosErrores.email = "El email es obligatorio";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      nuevosErrores.email = "El email no tiene un formato válido";
+    }
+
+    if (!asunto.trim()) {
+      nuevosErrores.asunto = "El asunto es obligatorio";
+    } else if (asunto.trim().length < 3) {
+      nuevosErrores.asunto = "El asunto debe tener al menos 3 caracteres";
+    }
+
+    if (!mensaje.trim()) {
+      nuevosErrores.mensaje = "El mensaje es obligatorio";
+    } else if (mensaje.trim().length < 10) {
+      nuevosErrores.mensaje = "El mensaje debe tener al menos 10 caracteres";
+    }
+
+    setErrores(nuevosErrores);
+
+    return Object.keys(nuevosErrores).length === 0;
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Formulario enviado:", { nombre, email, asunto, mensaje });
+
+    if (!validarCampos()) {
+      return; // No se envía si hay errores
+    }
 
     emailjs
       .sendForm(
-        "service_isz2jvd", // Tu Service ID
-        "template_ab816tj", // Tu Template ID
-        event.target, // El formulario HTML
-        "6Lg-f7Z8vNBqT6PyP" // Tu Public Key
+        "service_isz2jvd",
+        "template_ab816tj",
+        event.target,
+        "6Lg-f7Z8vNBqT6PyP"
       )
       .then(() => {
         setEnviado(true);
@@ -29,6 +66,7 @@ function Formulario() {
         setEmail("");
         setAsunto("");
         setMensaje("");
+        setErrores({});
       })
       .catch((error) => {
         console.error("Error al enviar:", error);
@@ -55,6 +93,7 @@ function Formulario() {
             </div>
           </div>
         </div>
+
         <form className="formulario-contacto" onSubmit={handleSubmit}>
           {enviado && (
             <p className="mensaje-enviado">
@@ -70,11 +109,12 @@ function Formulario() {
                 id="nombre"
                 name="nombre"
                 value={nombre}
-                onChange={(event) => setNombre(event.target.value)}
+                onChange={(e) => setNombre(e.target.value)}
                 placeholder="Ingresa tu nombre"
-                required
               />
+              {errores.nombre && <p className="error">{errores.nombre}</p>}
             </div>
+
             <div className="campo-email">
               <label htmlFor="email">Email:</label>
               <input
@@ -82,11 +122,12 @@ function Formulario() {
                 id="email"
                 name="email"
                 value={email}
-                onChange={(event) => setEmail(event.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Ingresa tu email"
-                required
               />
+              {errores.email && <p className="error">{errores.email}</p>}
             </div>
+
             <div className="campo-asunto">
               <label htmlFor="asunto">Asunto:</label>
               <input
@@ -94,26 +135,26 @@ function Formulario() {
                 id="asunto"
                 name="asunto"
                 value={asunto}
-                onChange={(event) => setAsunto(event.target.value)}
+                onChange={(e) => setAsunto(e.target.value)}
                 placeholder="Ingresa el asunto"
-              ></input>
+              />
+              {errores.asunto && <p className="error">{errores.asunto}</p>}
             </div>
+
             <div className="campo-mensaje">
               <label htmlFor="mensaje">Mensaje:</label>
               <textarea
                 id="mensaje"
                 name="mensaje"
                 value={mensaje}
-                onChange={(event) => setMensaje(event.target.value)}
+                onChange={(e) => setMensaje(e.target.value)}
                 placeholder="Escribe tu mensaje"
               ></textarea>
+              {errores.mensaje && <p className="error">{errores.mensaje}</p>}
             </div>
+
             <div className="campo-boton">
-              <button
-                type="submit"
-                className="boton-enviar"
-                disabled={!nombre || !email || !asunto || !mensaje}
-              >
+              <button type="submit" className="boton-enviar">
                 Enviar
               </button>
             </div>

@@ -1,4 +1,3 @@
-// src/components/Checkout.jsx
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import emailjs from "@emailjs/browser";
@@ -12,6 +11,7 @@ const Checkout = () => {
   const [formData, setFormData] = useState({
     nombre: "",
     apellidos: "",
+    email: "",
     direccion: "",
     ciudad: "",
     cp: "",
@@ -36,6 +36,7 @@ const Checkout = () => {
     const templateParams = {
       nombre: formData.nombre,
       apellidos: formData.apellidos,
+      email: formData.email,
       direccion: formData.direccion,
       ciudad: formData.ciudad,
       cp: formData.cp,
@@ -49,30 +50,30 @@ const Checkout = () => {
 
     emailjs
       .send(
-        "service_isz2jvd", // Tu Service ID
-        "template_ab816tj", // Tu Template ID
-        templateParams, // Datos que enviamos
-        "6Lg-f7Z8vNBqT6PyP" // Tu Public Key
+        "service_isz2jvd", // Service ID
+        "template_786yprp", // Template ID
+        templateParams, // Datos a enviar
+        "6Lg-f7Z8vNBqT6PyP" // Public Key
       )
-      .then(
-        () => {
-          alert("Compra realizada con éxito");
-          setFormData({
-            nombre: "",
-            apellidos: "",
-            direccion: "",
-            ciudad: "",
-            cp: "",
-            provincia: "",
-            tarjeta: "",
-            caducidad: "",
-            cvv: "",
-          });
-        },
-        (error) => {
-          alert("Error al realizar la compra: " + error.text);
-        }
-      );
+      .then(() => {
+        alert("Compra realizada con éxito");
+        // Resetear el formulario
+        setFormData({
+          nombre: "",
+          apellidos: "",
+          email: "",
+          direccion: "",
+          ciudad: "",
+          cp: "",
+          provincia: "",
+          tarjeta: "",
+          caducidad: "",
+          cvv: "",
+        });
+      })
+      .catch(() => {
+        alert("Error al realizar la compra");
+      });
   };
 
   return (
@@ -101,6 +102,7 @@ const Checkout = () => {
             required
           />
         </div>
+
         <div className="form-group">
           <label htmlFor="apellidos">Apellidos</label>
           <input
@@ -111,6 +113,18 @@ const Checkout = () => {
             required
           />
         </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
         <div className="form-group">
           <label htmlFor="direccion">Dirección</label>
           <input
@@ -121,6 +135,7 @@ const Checkout = () => {
             required
           />
         </div>
+
         <div className="form-group">
           <label htmlFor="ciudad">Ciudad</label>
           <input
@@ -131,6 +146,7 @@ const Checkout = () => {
             required
           />
         </div>
+
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="cp">Código Postal</label>
@@ -140,8 +156,11 @@ const Checkout = () => {
               value={formData.cp}
               onChange={handleChange}
               required
+              pattern="\d{5}"
+              title="El código postal debe tener 5 dígitos"
             />
           </div>
+
           <div className="form-group">
             <label htmlFor="provincia">Provincia</label>
             <input
@@ -163,8 +182,11 @@ const Checkout = () => {
             value={formData.tarjeta}
             onChange={handleChange}
             required
+            pattern="\d{20}"
+            title="La tarjeta debe tener 20 dígitos"
           />
         </div>
+
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="caducidad">Caducidad</label>
@@ -174,8 +196,11 @@ const Checkout = () => {
               value={formData.caducidad}
               onChange={handleChange}
               required
+              pattern="\d{2}/\d{2}"
+              title="Formato MM/AA"
             />
           </div>
+
           <div className="form-group">
             <label htmlFor="cvv">CVV</label>
             <input
@@ -184,6 +209,8 @@ const Checkout = () => {
               value={formData.cvv}
               onChange={handleChange}
               required
+              pattern="\d{3}"
+              title="El CVV debe tener 3 dígitos"
             />
           </div>
         </div>
